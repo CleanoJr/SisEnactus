@@ -8,6 +8,7 @@
     --cor-04: #24272f;
     --cor-05: #E8EAE2;
     --cor-06: #FFF;
+    --cor-07: #515356;
 }
 
 * {
@@ -22,7 +23,7 @@
 /*------ main (Conteúdo Principal) ------*/
 main {
     height: 95vh;
-    background: var(--cor-04);
+    background: var(--cor-05);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -37,9 +38,9 @@ main {
     justify-content:center;
     flex-direction: column;
     padding: 2em 2.7em;
-    background: var(--cor-02);
+    background: var(--cor-06);
     border-radius: 1em;
-    /* box-shadow: 0 10px 40px var(--cor-04); */
+    box-shadow: 0 .3em 1.5em var(--cor-04);
     /* border: 1px solid blue; */
 }
 
@@ -47,10 +48,11 @@ main {
     width: 80%;
     height: auto;
     margin-bottom: 1.5em;
+    filter: drop-shadow(0 1em 1em var(--cor-05));
 }
 
 form {
-    width: 100%;
+    width: 90%;
 }
 
 form fieldset{
@@ -66,13 +68,13 @@ form fieldset{
 
 fieldset input {
     width: 100%;
-    border: none;
+    border: .2em solid var(--cor-01);
     border-radius: .5em;
-    padding: 1em;
-    background: #201d29;
-    color: var(--cor-05);
-    font-size: 11pt;
-    box-shadow: 0 5px 20px var(--cor-04);
+    padding: .5em;
+    background: none;
+    color: var(--cor-04);
+    font-size: medium;
+    box-shadow: 0 5px 20px var(--cor-05);
     outline: none;
     box-sizing: border-box;
 }
@@ -82,9 +84,9 @@ fieldset input::placeholder {
 }
 
 fieldset label {
-    color: var(--cor-06);
+    color: var(--cor-04);
     margin-bottom: .5em;
-    font-size: 25px;
+    font-size:large;
     font-weight: 700;
 }
 
@@ -100,7 +102,13 @@ fieldset label {
     color: var(--cor-06);
     background: var(--cor-01);
     cursor: pointer;
-    box-shadow: 0px 5px 20px var(--cor-04);
+    box-shadow: 0 .3em 1.5em var(--cor-05);
+}
+
+form #esqueceu-senha {
+    color: var(--cor-04);
+    font-size: small;
+    font-weight: bold;
 }
 
 /*------ footer (Rodapé) ------*/
