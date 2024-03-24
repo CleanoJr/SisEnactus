@@ -80,7 +80,7 @@ fieldset input {
 }
 
 fieldset input::placeholder {
-    color: #f0ffff94;
+    color: var(--cor-07);
 }
 
 fieldset label {
