@@ -40,10 +40,10 @@ main {
     padding: 2em 2.7em;
     background: var(--cor-06);
     border-radius: 1em;
-    box-shadow: 0 .3em 1.5em var(--cor-04);
+    box-shadow: .1em .1em 2em #d6d7d1;
     /* border: 1px solid blue; */
 }
-
+ 
 #logo {
     width: 80%;
     height: auto;
