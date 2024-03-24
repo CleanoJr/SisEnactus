@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/*------ Variaveis ------*/
+:root {
+    --cor-01: #FFC222;
+    --cor-02: #3B4654;
+    --cor-03: #30333C;
+    --cor-04: #24272f;
+    --cor-05: #E8EAE2;
+    --cor-06: #FFF;
+    --cor-07: #515356;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Roboto', sans-serif;
+    /* border: 1px solid red; */
+
+}
+
+/*------ main (Conteúdo Principal) ------*/
+main {
+    height: 100vh;
+    background: var(--cor-05);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#form-login {
+    width: 60vw;
+    max-width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: column;
+    padding: 2em 2.7em;
+    background: var(--cor-06);
+    border-radius: 1em;
+    box-shadow: .1em .1em 2em #d6d7d1;
+    /* border: 1px solid blue; */
+}
+ 
+#logo {
+    width: 80%;
+    height: auto;
+    margin-bottom: 1.5em;
+    filter: drop-shadow(0 1em 1em var(--cor-05));
+}
+
+form {
+    width: 90%;
+}
+
+form fieldset{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    border: none;
+    margin: 10px 0;
+    /* border: 1px solid red; */
+}
+
+fieldset input {
+    width: 100%;
+    border: .1em solid var(--cor-01);
+    border-radius: .5em;
+    padding: .5em;
+    background: none;
+    color: var(--cor-04);
+    font-size: medium;
+    box-shadow: 0 5px 20px var(--cor-05);
+    outline: none;
+    box-sizing: border-box;
+}
+
+fieldset input::placeholder {
+    color: var(--cor-07);
+}
+
+fieldset label {
+    color: var(--cor-04);
+    margin-bottom: .5em;
+    font-size:large;
+    font-weight: 700;
+}
+
+#bt-login {
+    width: 100%;
+    padding: 1em;
+    margin: 1.5em 0 .03em;
+    border: none;
+    border-radius: .5em;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--cor-06);
+    background: var(--cor-01);
+    cursor: pointer;
+    box-shadow: 0 .3em 1.5em var(--cor-05);
+}
+
+#bt-login:hover {
+    background: #e1aa1e;
+}
+
+form #esqueceu-senha {
+    color: var(--cor-04);
+    font-size: small;
+    font-weight: bold;
+}
