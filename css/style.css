@@ -117,6 +117,7 @@ footer {
     height: 5vh;
     background: var(--cor-04);
     color: #fff;
+    font-size: small;
     position: absolute;
     bottom: 0;
     display: flex;
