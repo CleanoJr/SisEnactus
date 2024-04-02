@@ -1,57 +1,46 @@
 <!DOCTYPE html>
 <html lang="pt">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SisEnactus | Login</title>
-    <link rel="stylesheet" href="./css/login.css" />
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/icone/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/icone/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/icone/favicon-16x16.png" />
-    <link rel="manifest" href="assets/icone/site.webmanifest" />
-  </head>
-  <body>
-    <!-- Conteudo Principal -->
-    <main>
-      <div id="hub-login">
-        <div id="form-login">
-          <img
-            id="logo"
-            src="./assets/logotipo-sisenactus-alt.svg"
-            alt="Logo SisEnactus"
-          />
 
-          <form action="" method="post">
-            <fieldset>
-              <label for="login-email">Email</label>
-              <input
-                type="text"
-                name="email"
-                id="login-email"
-                placeholder="Digite seu email..."
-              />
-            </fieldset>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SisEnactus | Login</title>
+  <link rel="stylesheet" href="./css/login.css" />
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/icone/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/icone/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/icone/favicon-16x16.png" />
+  <link rel="manifest" href="assets/icone/site.webmanifest" />
+</head>
 
-            <fieldset>
-              <label for="login-senha">Senha</label>
-              <input
-                type="password"
-                name="senha"
-                id="login-senha"
-                placeholder="Digite sua senha..."
-              />
-            </fieldset>
+<body>
+  <!-- Conteudo Principal -->
+  <main>
+    <div id="hub-login">
+      <div id="form-login">
+        <img id="logo" src="./assets/logotipo-sisenactus-alt.svg" alt="Logo SisEnactus" />
 
-            <a href="./esqueceu-senha.html" id="esqueceu-senha">Esqueceu sua senha?</a>
-            <input type="submit" name="login" value="entrar" id="bt-login" />
-          </form>
-        </div>
+        <form action="./home-dashboard.html" method="post">
+          <fieldset>
+            <label for="login-email">Email</label>
+            <input type="text" name="email" id="login-email" placeholder="Digite seu email..." />
+          </fieldset>
+
+          <fieldset>
+            <label for="login-senha">Senha</label>
+            <input type="password" name="senha" id="login-senha" placeholder="Digite sua senha..." />
+          </fieldset>
+
+          <a href="./esqueceu-senha.html" id="esqueceu-senha">Esqueceu sua senha?</a>
+          <input type="submit" name="login" value="entrar" id="bt-login" />
+        </form>
       </div>
-    </main>
+    </div>
+  </main>
 
-    <!-- Rodapé -->
-    <!-- <footer>
+  <!-- Rodapé -->
+  <!-- <footer>
       <p>Feito por <strong>CleanoJr</strong></p>
     </footer> -->
-  </body>
+</body>
+
 </html>

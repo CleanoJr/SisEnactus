@@ -2,13 +2,13 @@
 
 /*------ Variaveis ------*/
 :root {
-    --cor-01: #FFC222;
-    --cor-02: #3B4654;
-    --cor-03: #30333C;
-    --cor-04: #24272f;
-    --cor-05: #E8EAE2;
-    --cor-06: #FFF;
-    --cor-07: #515356;
+    --cor-amarelo: #FFC222;
+    --cor-cinza-azulado: #3B4654;
+    --cor-cinza-escuro: #30333C;
+    --cor-dark: #24272f;
+    --cor-background-light: #E8EAE2;
+    --cor-branco: #FFF;
+    --cor-cinza-light: #515356;
 }
 
 * {
@@ -23,7 +23,7 @@
 /*------ main (Conteúdo Principal) ------*/
 main {
     height: 100vh;
-    background: var(--cor-05);
+    background: var(--cor-background-light);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -38,7 +38,7 @@ main {
     justify-content:center;
     flex-direction: column;
     padding: 2em 2.7em;
-    background: var(--cor-06);
+    background: var(--cor-branco);
     border-radius: 1em;
     box-shadow: .1em .1em 2em #d6d7d1;
     /* border: 1px solid blue; */
@@ -48,7 +48,7 @@ main {
     width: 80%;
     height: auto;
     margin-bottom: 1.5em;
-    filter: drop-shadow(0 1em 1em var(--cor-05));
+    filter: drop-shadow(0 1em 1em var(--cor-background-light));
 }
 
 form {
@@ -68,23 +68,23 @@ form fieldset{
 
 fieldset input {
     width: 100%;
-    border: .1em solid var(--cor-01);
+    border: .1em solid var(--cor-amarelo);
     border-radius: .5em;
     padding: .5em;
     background: none;
-    color: var(--cor-04);
+    color: var(--cor-dark);
     font-size: medium;
-    box-shadow: 0 5px 20px var(--cor-05);
+    box-shadow: 0 5px 20px var(--cor-background-light);
     outline: none;
     box-sizing: border-box;
 }
 
 fieldset input::placeholder {
-    color: var(--cor-07);
+    color: var(--cor-cinza-light);
 }
 
 fieldset label {
-    color: var(--cor-04);
+    color: var(--cor-dark);
     margin-bottom: .5em;
     font-size:large;
     font-weight: 700;
@@ -99,10 +99,10 @@ fieldset label {
     outline: none;
     text-transform: uppercase;
     font-weight: 700;
-    color: var(--cor-06);
-    background: var(--cor-01);
+    color: var(--cor-branco);
+    background: var(--cor-amarelo);
     cursor: pointer;
-    box-shadow: 0 .3em 1.5em var(--cor-05);
+    box-shadow: 0 .3em 1.5em var(--cor-background-light);
 }
 
 #bt-login:hover {
@@ -110,7 +110,7 @@ fieldset label {
 }
 
 form #esqueceu-senha {
-    color: var(--cor-04);
+    color: var(--cor-dark);
     font-size: small;
     font-weight: bold;
 }
