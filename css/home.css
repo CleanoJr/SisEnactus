@@ -31,11 +31,13 @@
 
 /*------ main (Conteúdo Principal) ------*/
 main {
-    height: 95vh;
-    background: var(--cor-background-light);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+   display: grid;
+   height: 95vh;
+   width: 96%;
+   margin: 0 auto;
+   gap: 1.8rem;
+   grid-template-columns: 14rem auto 23rem;
+   /* background: var(--cor-background-light); */
 }
 
 a {
@@ -52,24 +54,49 @@ h1 {
    font-size: 1.4rem;
 }
 
-
-
 aside {
-    width: 12em;
-    height: 95vh;
-    position: fixed;
-    left: 0;
-    top: 0;
-    background-color: var(--cor-cinza-light);
+   height: 95vh;
+   width: 12em;
+   position: fixed;
+   left: 0;
+   top: 0;
+   background-color: var(--cor-cinza-light);
 }
 
- 
-.logo {
-    width: 80%;
-    /* height: auto; */
-    /* margin-bottom: 1.5em; */
-    filter: drop-shadow(0 .15em .1em var(--cor-dark));
+aside .top {
+   /* background-color: var(--cor-cinza-escuro); */
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   margin-top: 1.4rem;
 }
+
+aside .logo img {
+   height: 2.3em;
+}
+
+aside .close {
+   display: none;
+}
+
+/* ========= Sidebar ========= */
+
+aside .sidebar {
+   background: #515356;
+   display: flex;
+   flex-direction: column;
+   height: 82vh;
+   position: relative;
+   top: 2em;
+   padding: .7em .5em;
+}
+
+.sidebar a {
+   display: flex;
+   gap: .4em;
+   margin: .4em 0.7em;
+}
+
 
 
 /*------ footer (Rodapé) ------*/
